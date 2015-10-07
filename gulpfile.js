@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'), // rename files
     htmlmin = require('gulp-htmlmin'), // minifier for html
     replace = require('gulp-replace'), // replace strings
-	htmlreplace = require('gulp-html-replace'), // replace js and css
+    htmlreplace = require('gulp-html-replace'), // replace js and css
     imagemin = require('gulp-imagemin'); // minifier for images
 
 var paths = {
