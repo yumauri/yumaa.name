@@ -1,0 +1,29 @@
+{
+	"name": "yumaa.erio",
+	"version": "2.5.1",
+	"description": "Victor Didenko, aka yumaa, home page",
+	"homepage": "http://yumaa.name",
+	"author": "Victor Didenko <yumaa.verdin@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yumauri/yumaa.name"
+	},
+	"bugs": {
+		"url": "https://github.com/yumauri/yumaa.name/issues"
+	},
+	"devDependencies": {
+		"gulp": "^3.9.0",
+		"gulp-concat": "^2.6.0",
+		"gulp-html-replace": "^1.5.4",
+		"gulp-htmlmin": "^1.2.0",
+		"gulp-csso": "^1.0.0",
+		"gulp-imagemin": "^2.3.0",
+		"gulp-less": "^3.0.3",
+		"gulp-rename": "^1.2.2",
+		"gulp-replace": "^0.5.4",
+		"gulp-uglify": "^1.4.1",
+		"gulp-util": "^3.0.6"
+	},
+	"private": true,
+	"license": "MIT"
+}

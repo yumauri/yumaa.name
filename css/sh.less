@@ -1,0 +1,407 @@
+// colors
+@black: #000c0c;
+@blackbold: #555555;
+@red: #bb2020;
+@redbold: #e95555;
+@green: #20bb20;
+@greenbold: #55e955;
+@yellow: #bbbb20;
+@yellowbold: #e9e955;
+@blue: #2020bb;
+@bluebold: #5555e9;
+@magenta: #bb20bb;
+@magentabold: #e955e9;
+@cyan: #20bbbb;
+@cyanbold: #55e9e9;
+@white: #bbbbbb;
+@whitebold: #e9e9e9;
+
+@cursor: @green;
+@commandhover: #001f22;
+
+@email: @whitebold;
+@skype: #7fba00; //?
+@jabber: #ffd300;
+@steam: #686766;
+@twitter: #00aced;
+@couchsurfing: #f9672b;
+@facebook: #3b5998;
+@goodreads: #666600;
+@google: #dd4b39;
+@youtube: #bb0000;
+@juick: #006699; //?
+@lastfm: #e31b23;
+@linkedin: #007bb6;
+@stackoverflow: #ffad04;
+@myanimelist: #2e51a2;
+@tumblr: #32506d;
+@vk: #45668e;
+@livejournal: #87add3;
+@blogspot: #fb8f3d;
+@github: #4183c4;
+
+
+// icomoon font with social networks icons
+// http://icomoon.io/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-7levk7');
+	src:url('../fonts/icomoon.eot?#iefix-7levk7') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-7levk7') format('woff'),
+		url('../fonts/icomoon.ttf?-7levk7') format('truetype'),
+		url('../fonts/icomoon.svg?-7levk7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Anonymous Pro font
+// modified by http://www.fontsquirrel.com/tools/webfont-generator
+.anonymouspro(@filename; @svghash; @weight; @style) {
+	font-family: 'Anonymous Pro';
+	src: url('../fonts/@{filename}.eot');
+	src: url('../fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/@{filename}.ttf') format('truetype'),
+	     url('../fonts/@{filename}.svg#@{svghash}') format('svg');
+	font-weight: @weight;
+	font-style: @style;
+}
+@font-face { .anonymouspro('anonymouspro'; 'anonymous_pro_minusregular'; normal; normal); }
+@font-face { .anonymouspro('anonymousprob'; 'anonymous_pro_minusbold'; bold; normal); }
+@font-face { .anonymouspro('anonymousproi'; 'anonymous_pro_minusitalic'; normal; italic); }
+@font-face { .anonymouspro('anonymousprobi'; 'anonymous_pro_minusBdIt'; bold; italic); }
+
+// blink support
+// from http://stackoverflow.com/a/16344389
+.blinkmixin(@prefix: ~'') {
+	@{prefix}animation-name: blinker;
+	@{prefix}animation-duration: 1s;
+	@{prefix}animation-timing-function: linear;
+	@{prefix}animation-iteration-count: infinite;
+}
+.blink {
+	.blinkmixin(-webkit-);
+	.blinkmixin(-moz-);
+	.blinkmixin();
+}
+.blinkermixin() {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker { .blinkermixin; }
+@-moz-keyframes blinker { .blinkermixin; }
+@keyframes blinker { .blinkermixin; }
+
+//=============================================================================
+
+body {
+	font-family: 'Anonymous Pro', 'Courier New', courier, monospace;
+	font-size: 12pt;
+	background-color: @black;
+	color: @white;
+}
+
+// disable 'Anonymous Pro' font for mobile devices
+@media only screen and (max-device-width : 767px) {
+	body {
+		font-family: 'Courier New', courier, monospace;
+		font-size: 11pt;
+	}
+
+	.altcmdline {
+		font-family: 'Courier New', courier, monospace !important;
+		font-size: 11pt !important;
+	}
+
+	.socialicon {
+		font-size: 22pt !important;
+
+		&.bit {
+			font-size: 18pt !important;
+		}
+
+		&.more {
+			font-size: 12pt !important;
+		}
+	}
+}
+
+a {
+	color: inherit;
+	border-bottom: 1px dashed;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.7;
+		border-bottom: 1px solid;
+	}
+}
+
+br {
+	clear: both;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+
+	&.help {
+		margin: 10px 0 10px 20px;
+
+		td {
+			padding-right: 5px;
+		}
+	}
+
+	&.wtable td {
+		padding: 2px 20px 2px 0;
+	}
+
+	&.digtable td {
+		padding: 1px 50px 1px 0;
+	}
+}
+
+div.hint {
+	float: left;
+	margin: 2px 50px 2px 0;
+}
+
+dl {
+	margin: 0;
+
+	dd {
+		margin: 0 0 0 20px;
+	}
+}
+
+// hidden ulogin buttons
+#uLogin {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	overflow: hidden;
+}
+
+// hidden textarea for pasting from clipboard
+#clipboarddata {
+	width: 1px;
+	height: 1px;
+	position: fixed;
+	left: -10px;
+	bottom: -10px;
+}
+
+.flag {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.row {
+	white-space: pre-wrap;      // CSS3
+	white-space: -moz-pre-wrap; // Firefox
+	white-space: -pre-wrap;     // Opera <7
+	white-space: -o-pre-wrap;   // Opera 7
+	word-wrap: break-word;      // IE
+}
+
+.prompt {
+	white-space: nowrap;
+}
+
+.boxed {
+	border: 1px solid @white;
+	margin: 10px 5px;
+	padding: 7px 10px;
+	float: left;
+}
+
+.command {
+	padding: 2px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	&:hover {
+		background-color: @commandhover;
+	}
+
+	&.disabled {
+		cursor: inherit;
+
+		&:hover {
+			background-color: inherit;
+		}
+	}
+}
+
+.enter {
+	line-height: 16px;
+	margin-left: 10px;
+	background-color: @commandhover;
+	padding: 2px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	opacity: 0.4;
+
+	&:hover {
+		opacity: 1.0;
+	}
+}
+
+.input .cursor,
+.cursor.waiting {
+	background-color: @cursor;
+	color: @black;
+}
+
+.altcmdform {
+	display: inline;
+}
+.altcmdline {
+	font-family: 'Anonymous Pro', 'Courier New', courier, monospace;
+	font-size: 12pt;
+	outline: none;
+	border-width: 0 0 1px 0;
+	border-color: @cursor;
+	background-color: @black;
+	color: @white;
+	line-height: 16px;
+	height: 1em;
+	width: 18px;
+}
+
+.historyrow {
+	padding: 2px 0;
+}
+
+.palette {
+	padding: 8px 10px;
+}
+
+.crap {
+	line-height: 1;
+}
+
+/* hacks for chrome and opera, for the perfect view of the palette */
+//@media screen and (-webkit-min-device-pixel-ratio:0) {
+//	.palette > span:first-of-type {
+//		padding-left: 1px;
+//	}
+//}
+//doesnotexist:-o-prefocus, .palette {
+//	line-height: 1.0949;
+//}
+/* --------- and now my inner perfectionist is glad -------------- */
+
+.error {
+	color: @red;
+}
+
+.warning {
+	color: @yellow;
+}
+
+// social networks icons
+.socialicon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1.5;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-size: 24pt;
+	margin-right: 20px;
+
+	&.bit {
+		font-size: 20pt;
+		position: relative;
+		top: -2px;
+	}
+
+	&.hidden {
+		line-height: 1.5;
+		display: none;
+	}
+
+	&.more {
+		font-size: 14pt;
+		position: relative;
+		top: -4px;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	a, a:hover {
+		opacity: 1.0;
+		border: 0;
+		text-decoration: none;
+	}
+
+	&.email a:hover { color: @email; }
+	&.skype a:hover { color: @skype; }
+	&.jabber a:hover { color: @jabber; }
+	&.steam a:hover { color: @steam; }
+	&.twitter a:hover { color: @twitter; }
+	&.couchsurfing a:hover { color: @couchsurfing; }
+	&.facebook a:hover { color: @facebook; }
+	&.goodreads a:hover { color: @goodreads; }
+	&.google a:hover { color: @google; }
+	&.youtube a:hover { color: @youtube; }
+	&.juick a:hover { color: @juick; }
+	&.lastfm a:hover { color: @lastfm; }
+	&.linkedin a:hover { color: @linkedin; }
+	&.stackoverflow a:hover { color: @stackoverflow; }
+	&.myanimelist a:hover { color: @myanimelist; }
+	&.tumblr a:hover { color: @tumblr; }
+	&.vk a:hover { color: @vk; }
+	&.livejournal a:hover { color: @livejournal; }
+	&.blogspot a:hover { color: @blogspot; }
+	&.github a:hover { color: @github; }
+}
+
+// console colors
+.font-bold { font-weight: bold; }
+.font-bold-off { font-weight: normal; }
+.font-italic { font-style: italic; }
+.font-italic-off { font-style: normal; }
+.font-underline { text-decoration: underline; }
+.font-blink { .blink; }
+.font-strike { text-decoration: line-through; }
+.font-underline-off, .font-blink-off, .font-strike-off { text-decoration: none; }
+.font-nondisplay { visibility: hidden; }
+.font-outline { text-shadow: 1px 1px 1px @whitebold; }
+.font-black { color: @black; }
+.font-black.font-bold { color: @blackbold; }
+.font-red { color: @red; }
+.font-red.font-bold { color: @redbold; }
+.font-green { color: @green; }
+.font-green.font-bold { color: @greenbold; }
+.font-yellow { color: @yellow; }
+.font-yellow.font-bold { color: @yellowbold; }
+.font-blue { color: @blue; }
+.font-blue.font-bold { color: @bluebold; }
+.font-magenta { color: @magenta; }
+.font-magenta.font-bold { color: @magentabold; }
+.font-cyan { color: @cyan; }
+.font-cyan.font-bold { color: @cyanbold; }
+.font-white { color: @white; }
+.font-white.font-bold { color: @whitebold; }
+.background-black { background-color: @black; }
+.background-red { background-color: @red; }
+.background-green { background-color: @green; }
+.background-yellow { background-color: @yellow; }
+.background-blue { background-color: @blue; }
+.background-magenta { background-color: @magenta; }
+.background-cyan { background-color: @cyan; }
+.background-white { background-color: @white; }

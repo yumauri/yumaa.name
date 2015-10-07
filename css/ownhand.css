@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'ownhandmedium';
+    src: url('../fonts/ownhand.eot');
+    src: url('../fonts/ownhand.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ownhand.ttf') format('truetype'),
+         url('../fonts/ownhand.svg#ownhandmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'ownhandmedium', 'Anonymous Pro', 'Courier New', courier, monospace;
+	font-size: 12pt;
+}
+
+.altcmdline {
+	font-family: 'ownhandmedium', 'Anonymous Pro', 'Courier New', courier, monospace;
+	font-size: 12pt;
+}
