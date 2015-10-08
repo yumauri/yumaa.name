@@ -177,8 +177,11 @@
 						'Tool, which allows you to start external program by clicking on the link with non standard protocol.<br>',
 						'For example, start Putty or console SSH client after clicking on link <a href="ssh://127.0.0.1">ssh://127.0.0.1</a>, or start VNC viewer after clicking on link <a href="vnc://127.0.0.1">vnc://127.0.0.1</a>.',
 					'</dd>',
-				// 
-				// and code of this site
+				'<br>',
+				'<dt>{{#E}}\\E[1;37m<a href="https://github.com/yumauri/yumaa.name" target="_blank">yumaa.name</a> &ndash; this site source{{/E}}</dt>',
+					'<dd>',
+						'Source code of this site, take a look if you like it :)',
+					'</dd>',
 				'</dl>'
 			].join(''),
 			ru: [
@@ -205,8 +208,11 @@
 						'Утилита, позволяющая запустить внешнюю программу при клике по ссылке с нестандартным протоколом.<br>',
 						'Например, запустить Putty или консольный SSH клиент при клике по ссылке <a href="ssh://127.0.0.1">ssh://127.0.0.1</a>, или запустить VNC клиент при клике по ссылке <a href="vnc://127.0.0.1">vnc://127.0.0.1</a>.',
 					'</dd>',
-				// 
-				// and code of this site
+				'<br>',
+				'<dt>{{#E}}\\E[1;37m<a href="https://github.com/yumauri/yumaa.name" target="_blank">yumaa.name</a> &ndash; этот сайт{{/E}}</dt>',
+					'<dd>',
+						'Исходный код этого сайта, посмотрите, если он вам нравится :)',
+					'</dd>',
 				'</dl>'
 			].join('')
 		},
