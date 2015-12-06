@@ -5,7 +5,7 @@
  * Require jquery (tested on 1.11.3) https://jquery.com/
  * Require mousetrap (tested on 1.5.3) http://craig.is/killing/mice
  * Require mustache (tested on 2.1.3) https://github.com/janl/mustache.js
- * 
+ *
  * Author Didenko Victor
  */
 
@@ -19,7 +19,7 @@
 	 */
 
 	// application version
-	var version = '2.5.1 (29/09/2015)';
+	var version = '2.5.1 (06/12/2015)';
 
 	// get _ from the global scope
 	var _ = window._;
@@ -41,6 +41,10 @@
 			tem = ua.match(/\bedge\/([\d\.]+)?/i);
 			if (tem !== null) {
 				return 'Edge/' + (tem[1] || '');
+			}
+			tem = ua.match(/\bvivaldi\/([\d\.]+)?/i);
+			if (tem !== null) {
+				return 'Vivaldi/' + (tem[1] || '');
 			}
 		}
 		M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
@@ -97,7 +101,7 @@
 							// move command
 							bin[newname] = bin[b];
 							delete bin[b];
-					
+
 							// move properties and hints
 							if (b + 'Property' in bin) {
 								bin[newname + 'Property'] = bin[b + 'Property'];
@@ -1642,7 +1646,7 @@
 					pos = 0;
 				}
 				state.cursorPosition = pos;
-			
+
 			// smart move cursor
 			} else {
 				var moveTo = null;
@@ -2207,6 +2211,11 @@
 			view.execute();
 			return false;
 		});
+
+		//TODO add Konami Code
+		// https://en.wikipedia.org/wiki/Konami_Code
+		// ↑↑↓↓←→←→ba
+		// maybe use https://github.com/mikeflynn/egg.js
 	}
 
 	// unbind keys event listeners

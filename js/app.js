@@ -207,7 +207,7 @@ $(document).ready(function() {
 				} else {
 					$body.css('font-family', chest.bodyfunfont);
 				}
-				
+
 			}
 		}
 	};
@@ -272,6 +272,9 @@ $(document).ready(function() {
 	// remove <noscript> tags
 	$('noscript').remove();
 
+	// remove script for old opera detection, just for appearance
+	$('#oldopera').remove();
+
 	// remove _ from global scope ]:->
 	delete window._;
 });
@@ -322,7 +325,7 @@ var Strings = (function(navigator) {
 					    	[23, 24, _timebased[3]]
 					    ],
 					    use = Math.round(Math.random() * permanent.length);
-	
+
 					if (use < permanent.length) {
 						return permanent[use];
 					} else {
@@ -333,7 +336,7 @@ var Strings = (function(navigator) {
 							}
 						}
 					}
-	
+
 					return permanent[0];
 				}
 			}

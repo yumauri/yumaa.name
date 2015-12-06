@@ -56,7 +56,7 @@
 				'Your Internet Explorer was released in {{years.year}}, it was {{years.diff}} years ago,',
 				'don\'t you think it is time to upgrade it or change it to smth else?',
 				'There are plenty of good modern browsers, for example,',
-				'<a href="https://www.google.com/chrome" target="_blank">Chrome</a>, <a href="http://mozilla.org/firefox" target="_blank">Firefox</a>, <a href="http://www.opera.com/" target="_blank">Opera</a>, even <a href="http://microsoft.com/ie" target="_blank">latest IE</a> is not so bad.',
+				'<a href="https://www.google.com/chrome" target="_blank">Chrome</a>, <a href="http://mozilla.org/firefox" target="_blank">Firefox</a>, <a href="http://www.opera.com/" target="_blank">Opera</a>, <a href="https://vivaldi.com" target="_blank">Vivaldi</a>, even <a href="http://microsoft.com/ie" target="_blank">latest IE</a> is not so bad.',
 				'Even mobile browsers nowadays are better than yours.',
 				'So, do smth with that, say goodbye to the past, let it go!',
 				'And after that hope to see you here again ;)</div><br clear="both">'
