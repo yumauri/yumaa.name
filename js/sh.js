@@ -177,50 +177,6 @@
 				bin.catHint = files;
 			},
 
-			// init 'login' command (list of social networks)
-			login: function() {
-				var providers = ['twitter','vkontakte','facebook','google','googleplus','yandex','youtube',/*'livejournal',*/'tumblr',/*'instagram','linkedin',*/'openid'];
-
-				//MAYBE move to view.init() ?
-				// load uLogin <script src="//ulogin.ru/js/ulogin.js"></script>
-				$.ajax({
-					url: '//ulogin.ru/js/ulogin.js',
-					cache: true,
-					dataType: 'script'
-				});
-				// create uLogin main element with buttons
-				var $uLogin = $('<div id="uLogin" data-ulogin="display=buttons;optional=nickname,first_name,last_name;lang=' + _.language + ';callback=uLoginCallback"/>');
-				for (var i = providers.length; i--;) {
-					$uLogin.append('<span data-uloginbutton="' + providers[i] + '" class="uloginbutton ' + providers[i] + '"/>');
-				}
-				$(document.body).append($uLogin);
-
-				// define callback for uLogin
-				window.uLoginCallback = function(token) {
-					$.ajax({
-						url: '//ulogin.ru/token.php',
-						dataType: 'jsonp',
-						data: {
-							host: window.location.toString(),
-							token: token
-						},
-						success: function(data) {
-							if (window.JSON && window.JSON.parse) {
-								try {
-									data = JSON.parse('' + data);
-								} catch(e) {}
-							}
-							if (data && !data.error) {
-								bin.login(data); // call 'login' command with recieved data
-							}
-						}
-					});
-				};
-
-				// add all providers to 'login' command hint
-				bin.loginHint = providers;
-			},
-
 			// init 'geoip' command (check AdBlock EasyPrivacy list)
 			geoip: function() {
 				//MAYBE move to view.init() ? or to <head>
@@ -789,55 +745,6 @@
 			}
 		},
 
-		// do login
-		// if Sh === true -> command executed from cli, else -> from callback (argv == data in that case)
-		login: function(argv, cmd, std) {
-			// "click" by button or show usage message
-			if (this === Sh) {
-				if (argv.length === 1) {
-					return str('.loginusage') + '<br>    ' + bin.loginHint.join(', ');
-				} else
-				if (argv.length > 2 || bin.loginHint.indexOf(argv[1]) === -1) {
-					std.err = _('wrongarguments');
-					return;
-				}
-
-				// open social network uLogin window by "clicking" on uLogin button
-				$('#uLogin .' + argv[1]).trigger('click');
-
-			// do login
-			} else {
-				// get login
-				var login = 'root';
-				if (argv) {
-					if (argv.nickname) {
-						login = argv.nickname;
-					} else
-					if (argv.first_name) {
-						login = argv.first_name;
-						if (argv.last_name) {
-							login += ' ' + argv.last_name;
-						}
-					} else
-					if (argv.last_name) {
-						login = argv.last_name;
-					}
-				}
-				login = login.toLowerCase().replace(/\s/g, '_');
-
-				user.login = login;
-				tools.storage.set('login', login, 'session'); // save user login for session
-
-				bin.su();
-
-				view.row(str('.logined', argv)); // print welcome message
-				view.set('');
-				view.execute();
-			}
-
-			return -1; // do not save in hash
-		},
-
 		// do logout
 		logout: function() {
 			// if user is authorized -> deauthorize
@@ -1056,9 +963,7 @@
 		'.palette': _('palette'),
 		'.ip': _('ip'),
 		'.geoip': _('geoip'),
-		'.dig': _('dig'),
-		'.loginusage': _('loginusage'),
-		'.logined': _('logined')
+		'.dig': _('dig')
 	};
 
 	// collections of small helpful snippets
@@ -2009,14 +1914,6 @@
 
 			me.prompt();
 		},
-
-		// do login
-		/* jshint ignore:start */
-		login: function(network) {
-			//TODO
-			// hm... nothing to do here?
-		},
-		/* jshint ignore:end */
 
 		// do logout
 		logout: function() {

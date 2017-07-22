@@ -6,14 +6,6 @@ $(document).ready(function() {
 	// get _ from the global scope
 	var _ = window._;
 
-	// activate 'more...' icon for contacts
-	$(document.body).on('click', '.socialicon.more', function() {
-		var $me = $(this);
-		$me.parent().find('.hidden').show(); // show all hidden icons
-		$me.remove(); // remove 'more...' icon
-		return false;
-	});
-
 	// ie<=8
 	if (navigator.userAgent.match(/MSIE [678]\.\d/)) {
 		// get command from hash, if any

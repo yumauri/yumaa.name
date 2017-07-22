@@ -113,7 +113,7 @@ body {
 		font-size: 11pt !important;
 	}
 
-	.socialicon {
+	.sicon {
 		font-size: 22pt !important;
 
 		&.bit {
@@ -173,16 +173,6 @@ dl {
 	dd {
 		margin: 0 0 0 20px;
 	}
-}
-
-// hidden ulogin buttons
-#uLogin {
-	width: 1px;
-	height: 1px;
-	position: absolute;
-	left: -10px;
-	top: -10px;
-	overflow: hidden;
 }
 
 // hidden textarea for pasting from clipboard
@@ -306,7 +296,7 @@ dl {
 }
 
 // social networks icons
-.socialicon {
+.sicon {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -327,21 +317,6 @@ dl {
 		top: -2px;
 	}
 
-	&.hidden {
-		line-height: 1.5;
-		display: none;
-	}
-
-	&.more {
-		font-size: 14pt;
-		position: relative;
-		top: -4px;
-
-		&:hover {
-			opacity: 0.7;
-		}
-	}
-
 	a, a:hover {
 		opacity: 1.0;
 		border: 0;
@@ -352,15 +327,15 @@ dl {
 	&.skype a:hover { color: @skype; }
 	&.jabber a:hover { color: @jabber; }
 	&.steam a:hover { color: @steam; }
-	&.twitter a:hover { color: @twitter; }
+	&.twttr a:hover { color: @twitter; }
 	&.couchsurfing a:hover { color: @couchsurfing; }
-	&.facebook a:hover { color: @facebook; }
+	&.fcbook a:hover { color: @facebook; }
 	&.goodreads a:hover { color: @goodreads; }
 	&.google a:hover { color: @google; }
 	&.youtube a:hover { color: @youtube; }
 	&.juick a:hover { color: @juick; }
 	&.lastfm a:hover { color: @lastfm; }
-	&.linkedin a:hover { color: @linkedin; }
+	&.linkdin a:hover { color: @linkedin; }
 	&.stackoverflow a:hover { color: @stackoverflow; }
 	&.myanimelist a:hover { color: @myanimelist; }
 	&.tumblr a:hover { color: @tumblr; }

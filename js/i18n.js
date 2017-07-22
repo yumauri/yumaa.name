@@ -128,27 +128,26 @@
 
 		contacts: {
 			en: [
-				'<span class="socialicon twitter"><a href="https://twitter.com/yumaa" target="_blank" title="Twitter">&#xe602;</a></span>',
-				// '<span class="socialicon juick"><a href="https://juick.com/yumaa/" target="_blank" title="Juick">ju</a></span>',
-				'<span class="socialicon tumblr bit"><a href="http://luz.yumaa.name/" target="_blank" title="Tumblr">&#xe60c;</a></span>',
-				'<span class="socialicon blogspot bit hidden"><a href="http://blog.yumaa.name/" target="_blank" title="Blog">&#xe62f;</a></span>',
-				// '<span class="socialicon livejournal bit"><a href="http://yumaa.livejournal.com/" target="_blank" title="LiveJournal">&#xe603;</a></span>',
-				'<span class="socialicon facebook bit"><a href="https://www.facebook.com/yumauri" target="_blank" title="Facebook">&#xe605;</a></span>',
-				'<span class="socialicon vk hidden"><a href="https://vk.com/yumaa" target="_blank" title="ВКонтакте">&#xe606;</a></span>',
-				'<span class="socialicon google bit hidden"><a href="https://www.google.com/+YumaaVerdin" target="_blank" title="Google+">&#xe607;</a></span>',
-				'<span class="socialicon couchsurfing bit hidden"><a href="https://www.couchsurfing.org/people/yumaa/" target="_blank" title="CouchSurfing">&#xe619;</a></span>',
-				'<span class="socialicon youtube hidden"><a href="https://www.youtube.com/user/yumaaverdin" target="_blank" title="YouTube">&#xe609;</a></span>',
-				'<span class="socialicon lastfm bit hidden"><a href="http://www.lastfm.ru/user/yumauri" target="_blank" title="Last.fm">&#xe62a;</a></span>',
-				'<span class="socialicon goodreads bit hidden"><a href="https://www.goodreads.com/user/show/10176740-yumaa" target="_blank" title="Goodreads">&#xe60a;</a></span>',
-				'<span class="socialicon myanimelist hidden"><a href="http://myanimelist.net/profile/yumaa" target="_blank" title="MyAnimeList">&#xe616;</a></span>',
-				'<span class="socialicon steam bit hidden"><a href="http://steamcommunity.com/id/yumaa/" target="_blank" title="Steam">&#xe62b;</a></span>',
-				'<span class="socialicon github hidden"><a href="https://github.com/yumauri" target="_blank" title="GitHub">&#xe60f;</a></span>',
-				// '<span class="socialicon stackoverflow bit hidden"><a href="http://stackoverflow.com/users/1114686/yumaa" target="_blank" title="StackOverflow">&#xe61f;</a></span>',
-				'<span class="socialicon linkedin bit hidden"><a href="http://www.linkedin.com/in/yumauri" target="_blank" title="LinkedIn">&#xe611;</a></span>',
-				// '<span class="socialicon jabber"><a href="jabber:yumaa@jabber.ru" title="Jabber">j</a></span>',
-				'<span class="socialicon skype bit"><a href="skype:yumauri" title="Skype">&#xe612;</a></span>',
-				'<span class="socialicon email bit"><a href="mailto:yumaa.verdin@ma.il" title="e-mail">&#xe614;</a></span>',
-				'<span class="socialicon more"><a href="#" title="more...">&#xe601;</a></span>'
+				'<span class="sicon twttr"><a href="https://twitter.com/yumaa" target="_blank" title="Twittеr">&#xe602;</a></span>',
+				// '<span class="sicon juick"><a href="https://juick.com/yumaa/" target="_blank" title="Juick">ju</a></span>',
+				'<span class="sicon tumblr bit"><a href="http://luz.yumaa.name/" target="_blank" title="Tumblr">&#xe60c;</a></span>',
+				'<span class="sicon blogspot bit"><a href="http://blog.yumaa.name/" target="_blank" title="Blog">&#xe62f;</a></span>',
+				// '<span class="sicon livejournal bit"><a href="http://yumaa.livejournal.com/" target="_blank" title="LiveJournal">&#xe603;</a></span>',
+				'<span class="sicon fcbook bit"><a href="https://www.facebook.com/yumauri" target="_blank" title="Facеbook">&#xe605;</a></span>',
+				// '<span class="sicon vk"><a href="https://vk.com/yumaa" target="_blank" title="ВКонтакте">&#xe606;</a></span>',
+				// '<span class="sicon google bit"><a href="https://www.google.com/+YumaaVerdin" target="_blank" title="Googlе+">&#xe607;</a></span>',
+				'<span class="sicon couchsurfing bit"><a href="https://www.couchsurfing.org/people/yumaa/" target="_blank" title="CouchSurfing">&#xe619;</a></span>',
+				'<span class="sicon youtube"><a href="https://www.youtube.com/user/yumaaverdin" target="_blank" title="YouTube">&#xe609;</a></span>',
+				'<span class="sicon lastfm bit"><a href="http://www.lastfm.ru/user/yumauri" target="_blank" title="Last.fm">&#xe62a;</a></span>',
+				'<span class="sicon goodreads bit"><a href="https://www.goodreads.com/user/show/10176740-yumaa" target="_blank" title="Goodreads">&#xe60a;</a></span>',
+				'<span class="sicon myanimelist"><a href="http://myanimelist.net/profile/yumaa" target="_blank" title="MyAnimeList">&#xe616;</a></span>',
+				'<span class="sicon steam bit"><a href="http://steamcommunity.com/id/yumaa/" target="_blank" title="Steam">&#xe62b;</a></span>',
+				'<span class="sicon github"><a href="https://github.com/yumauri" target="_blank" title="GitHub">&#xe60f;</a></span>',
+				// '<span class="sicon stackoverflow bit"><a href="http://stackoverflow.com/users/1114686/yumaa" target="_blank" title="StackOverflow">&#xe61f;</a></span>',
+				'<span class="sicon linkdin bit"><a href="http://www.linkedin.com/in/yumauri" target="_blank" title="LinkеdIn">&#xe611;</a></span>',
+				// '<span class="sicon jabber"><a href="jabber:yumaa@jabber.ru" title="Jabber">j</a></span>',
+				'<span class="sicon skype bit"><a href="skype:yumauri" title="Skype">&#xe612;</a></span>',
+				'<span class="sicon email bit"><a href="mailto:yumaa.verdin@ma.il" title="e-mail">&#xe614;</a></span>'
 			].join('')
 		},
 
@@ -255,7 +254,7 @@
 				'Yumaa home page<br>',
 				'Version {{version}}<br>',
 				'&copy; 2014-2015 Victor Didenko<br><br>',
-				'<b>&lt;&gt;</b> with <b>&hearts;</b> and following libraries and resources:<br><br>',
+				'{{#E}}\\E[1;36m&lt;&gt;{{/E}} with {{#E}}\\E[1;31m&hearts;{{/E}} and following libraries and resources:<br><br>',
 				'<dl>',
 				'<dt>{{#E}}\\E[1;37m<a href="http://jquery.com/" target="_blank">jQuery</a>{{/E}}</dt>',
 					'<dd>',
@@ -290,19 +289,13 @@
 				'<dt>{{#E}}\\E[1;37m<a href="http://www.marksimonson.com/fonts/view/anonymous-pro" target="_blank">Anonymous Pro font</a>{{/E}} by <a href="http://www.marksimonson.com/" target="_blank">Mark Simonson</a></dt>',
 					'<dd>',
 						'Family of four monospased fixed-width fonts designed especially with coding in mind. Characters that could be mistaken for one another (O, 0, I, l, 1, etc.) have distinct shapes to make them easier to tell apart in the context of source code.',
-					'</dd>',
-				'<br>',
-				'<dt>Login feature powered by {{#E}}\\E[1;37m<a href="https://ulogin.ru/" target="_blank">uLogin</a>{{/E}}</dt>',
-					'<dd>',
-						'Service allows users to login using their accounts at many different social networks.',
-					'</dd>',
-				'</dl>'
+					'</dd>'
 			].join(''),
 			ru: [
 				'Личная страничка Yumaa<br>',
 				'Версия {{version}}<br>',
 				'&copy; 2014-2015 Виктор Диденко<br><br>',
-				'<b>&lt;&gt;</b> с <b>&hearts;</b> и следующими библиотеками и ресурсами:<br><br>',
+				'{{#E}}\\E[1;36m&lt;&gt;{{/E}} с {{#E}}\\E[1;31m&hearts;{{/E}} и следующими библиотеками и ресурсами:<br><br>',
 				'<dl>',
 				'<dt>{{#E}}\\E[1;37m<a href="http://jquery.com/" target="_blank">jQuery</a>{{/E}}</dt>',
 					'<dd>',
@@ -337,13 +330,7 @@
 				'<dt>{{#E}}\\E[1;37m<a href="http://www.marksimonson.com/fonts/view/anonymous-pro" target="_blank">Шрифт Anonymous Pro</a>{{/E}} от <a href="http://www.marksimonson.com/" target="_blank">Mark\'а Simonson\'а</a></dt>',
 					'<dd>',
 						'Четыре моноширинных шрифта, спроектированных специально для программирования. Символы, которые можно спутать (O, 0, I, l, 1, и т.д.) имеют различные формы, позволяя проще их различать в коде.',
-					'</dd>',
-				'<br>',
-				'<dt>Возможность логина работает с помощью {{#E}}\\E[1;37m<a href="https://ulogin.ru/" target="_blank">uLogin</a>{{/E}}</dt>',
-					'<dd>',
-						'Сервис, позволяющий пользователям получить доступ к сайту используя аккаунты в различных социальных сетях.',
-					'</dd>',
-				'</dl>'
+					'</dd>'
 			].join('')
 		},
 
@@ -385,24 +372,6 @@
 		baddomain: {
 			en: 'this doesn\'t look like domain name or ip address',
 			ru: 'это не выглядит как домен или ip адрес'
-		},
-
-		loginusage: {
-			en: [
-				'usage:',
-				'    login &lt;social network name&gt;',
-				'',
-				'available networks:'
-			]
-		},
-
-		logined: {
-			en: '{{#network}}Authenticating with &quot;{{network}}&quot;' +
-				'{{#profile}} using profile <a href="{{profile}}" target="_blank">{{profile}}</a>{{/profile}}<br>{{/network}}' +
-				'Hello, {{user.login}}!',
-			ru: '{{#network}}Аутентификация через &quot;{{network}}&quot;' +
-				'{{#profile}}, используя профиль <a href="{{profile}}" target="_blank">{{profile}}</a>{{/profile}}<br>{{/network}}' +
-				'Добро пожаловать, {{user.login}}!'
 		},
 
 		loggedout: {
