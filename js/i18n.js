@@ -289,7 +289,8 @@
 				'<dt>{{#E}}\\E[1;37m<a href="http://www.marksimonson.com/fonts/view/anonymous-pro" target="_blank">Anonymous Pro font</a>{{/E}} by <a href="http://www.marksimonson.com/" target="_blank">Mark Simonson</a></dt>',
 					'<dd>',
 						'Family of four monospased fixed-width fonts designed especially with coding in mind. Characters that could be mistaken for one another (O, 0, I, l, 1, etc.) have distinct shapes to make them easier to tell apart in the context of source code.',
-					'</dd>'
+					'</dd>',
+				'</dl>'
 			].join(''),
 			ru: [
 				'Личная страничка Yumaa<br>',
@@ -330,7 +331,8 @@
 				'<dt>{{#E}}\\E[1;37m<a href="http://www.marksimonson.com/fonts/view/anonymous-pro" target="_blank">Шрифт Anonymous Pro</a>{{/E}} от <a href="http://www.marksimonson.com/" target="_blank">Mark\'а Simonson\'а</a></dt>',
 					'<dd>',
 						'Четыре моноширинных шрифта, спроектированных специально для программирования. Символы, которые можно спутать (O, 0, I, l, 1, и т.д.) имеют различные формы, позволяя проще их различать в коде.',
-					'</dd>'
+					'</dd>',
+				'</dl>'
 			].join('')
 		},
 
