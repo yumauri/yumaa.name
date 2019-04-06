@@ -1,0 +1,15 @@
+yumaa.name www.yumaa.name {
+  root /srv/yumaa.name
+  tls yumaa.verdin@gmail.com
+  gzip
+
+  # clone site from github
+  git github.com/yumauri/yumaa.name /git/yumaa.name {
+    then ln -sf /git/yumaa.name/build /srv/yumaa.name
+  }
+
+  # enable php
+  fastcgi / 127.0.0.1:9000 php
+  on startup php-fpm7
+}
+
