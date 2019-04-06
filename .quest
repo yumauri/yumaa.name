@@ -1,0 +1,85 @@
+1. Hint: look into your head(er) -> http header
+
+	q: What was the last sentence of Pete's belief that at least one door must lead into summer?
+	a: You know, I think he is right.
+
+2. John McAfee, VICE photo (8f6114a5d161ead62ef45cf8bc1a4d93.jpg)
+
+	q: coordinates and hint
+	a: 26° 25' 10.8480", 127° 43' 57.1440" -> Okinawa Japan
+       === 26.41968, 127.73254 ( http://www.earthpoint.us/convert.aspx )
+       coordinates from cicada 3301 -> hint to use Outguess
+
+	# exiv2 -M"set Exif.GPSInfo.GPSLatitude 26/1 25/1 10848/1000" -M"set Exif.GPSInfo.GPSLatitudeRef N" i.jpg
+	# exiv2 -M"set Exif.GPSInfo.GPSLongitude 127/1 43/1 57144/1000" -M"set Exif.GPSInfo.GPSLongitudeRef E" i.jpg
+	# exiv2 -M"set Exif.Photo.UserComment charset=Ascii pay attention to precision, but not too religiously. trailing zero means nothing." i.jpg
+
+3. Outguess
+
+	get link http://goo.gl/vWxejl => h5vpfftd63fav2eg.onion
+
+	q: Who are you? A real being or just a whisper in my ghost?<br>
+       There's always more than one way to view a situation. <!-- and to open a file -->
+    a: Kusanagi
+       hint to rarjpeg
+
+	# outguess -r picwithoutguess.jpg textout.txt              (to outguess msg out)
+	# outguess -d secretmsg.txt sourcepic.jpg encryptedpic.jpg (to outguess message in pic)
+	# copy /b i.jpg + a.rar i_new.jpg
+
+4. Archive
+
+	password for archive is "Kusanagi"
+
+	q: And where does the newborn go from here?
+	a: The net is vast and infinite. | The net is vast and limitless.
+
+5. City photo (a103cb3422fad6da8beb0eaab0c6a310.jpg)
+
+	q1: QRcode
+	a1: btsync://BMJX4I7DAPSELY7TMPYWKAAISVN6CGHSS?n=btsync
+
+	q2: outguessed message
+	a2: brainfucked link to /img/734442e33d8eff4b48b62d603966bdb5.jpg <- piet program image
+
+5.1. btsync://BMJX4I7DAPSELY7TMPYWKAAISVN6CGHSS?n=btsync
+
+	quest.7z -> password for archive is "Alice" (from 5.2.1)
+
+	# btsync http://yumaa.name:8888/
+	#  yumaa:hdgNh4yDf
+	#  rw A5SQRFSDDIEXI6L2NEGMM77CNQJQV4KM5
+	#  ro BMJX4I7DAPSELY7TMPYWKAAISVN6CGHSS
+
+5.1.1. SVG image with many single-word comments
+
+	q: Ár var alda, þat er ekki var, var-a sandr né sær né svalar unnir; jörð fannsk æva né, gap var ginnunga en gras hvergi
+	a: this is one verse from Völuspá (Voluspa, Prophecy of the Völva) with one missing word -> "upphiminn"
+
+5.1.2. Nested archive quit.7z
+
+	password for archive is "upphiminn"
+
+	Congratulations, you solved quest!
+	Great work!
+	I hope you had pleasure and fun solving it ^_^
+	'Cause it is your only prize. You didn't really expect smth valuable, did you?
+	Write to me, please (you can see my e-mail in the contacts) and I'll add your name with any link, if you want, in the quest.txt on the site.
+	Add to your mail this string:
+	ZnVjayB5ZWFoLCBpIGtub3cga3VuZyBmdSE=
+
+5.2. Piet (734442e33d8eff4b48b62d603966bdb5.jpg)
+
+	http://www.dangermouse.net/esoteric/piet.html
+	http://progopedia.com/language/piet/
+
+	q: piet program image
+	a: pieted link to /bin/29f0c2c144dbfdcc79b9e5fd5e7389e6.php
+
+5.2.1. 29f0c2c144dbfdcc79b9e5fd5e7389e6.php
+
+	q1: authorization
+	a1: set cookie
+
+	q2: Who in the world am I? Ah, that's the great puzzle!
+	a2: Alice

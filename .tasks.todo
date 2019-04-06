@@ -1,0 +1,10 @@
+ ☐ нотификации с чем-нить http://alxgbsn.co.uk/2013/02/20/notify-js-a-handy-wrapper-for-the-web-notifications-api/
+ ☐ нотификация ↑ со звуком http://www.schillmania.com/projects/soundmanager2/ http://soundbible.com/
+ ☐ перенести проекты с google code на github
+ ✔ залить готовый сайт на github и добавить ссылку в projects @done (15-10-08 11:10)
+ ✘ jquery поменять на 2 ветку, всё равно в ie8 сайт падает с out of memory @cancelled (14-05-24 22:06)
+ ✘ cv ( http://craig.is/working ) @cancelled (14-02-09 00:54)
+ ☐ подсказки к квесту
+     ( к макафи: PwNd by w0rmer & CabinCr3w <3 u BiTch's ! )
+ ☐ удалить определение локального ip, всё равно уже не работает
+ ☐ переделать получение текущего ip (lastIP) без ajax вызова (у меня же index.php)
